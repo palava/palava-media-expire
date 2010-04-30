@@ -87,7 +87,8 @@ final class AssetExpirationService implements Initializable, Executable, Runnabl
     public void execute() throws LifecycleException {
         run();
     }
-    
+
+    @UnitOfWork
     @Transactional
     @Override
     public void run() {
