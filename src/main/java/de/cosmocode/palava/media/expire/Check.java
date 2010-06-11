@@ -20,6 +20,7 @@ import java.util.Map;
 
 import com.google.common.base.Preconditions;
 import com.google.inject.Inject;
+import com.google.inject.Singleton;
 
 import de.cosmocode.palava.ipc.IpcCall;
 import de.cosmocode.palava.ipc.IpcCommand;
@@ -31,6 +32,7 @@ import de.cosmocode.palava.ipc.IpcCommandExecutionException;
  * @since 2.0
  * @author Willi Schoenborn
  */
+@Singleton
 public final class Check implements IpcCommand {
 
     private final AssetExpirationService service;
